@@ -58,8 +58,7 @@
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T03:40:18.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T03:40:18.319Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "DTOs\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T03:32:19.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T03:32:19.888Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "Controllers\\LeaveRequestsController.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAkwFcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:32:45.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T02:32:45.748Z"
             },
             {
               "$type": "Document",
@@ -95,7 +92,7 @@
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
               "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwB4AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-13T01:12:47.083Z",
               "EditorCaption": ""
@@ -110,8 +107,7 @@
               "RelativeToolTip": "Models\\LeaveRequest.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAzwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T01:08:30.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T01:08:30.169Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T01:02:43.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T01:02:43.427Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "Models\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T01:04:35.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T01:04:35.774Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "Services\\LeaveRequestService.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAYwBAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:31:15.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T02:31:15.236Z"
             }
           ]
         },

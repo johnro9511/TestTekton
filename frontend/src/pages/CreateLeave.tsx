@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { createLeaveRequest } from "../api/leaverequests";
 
-export default function CreateLeave() {
+interface Props {
+  onCreated: () => void;
+}
+
+export default function CreateLeave({ onCreated }: Props)  {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
   const [reason, setReason] = useState("");
@@ -19,6 +23,8 @@ export default function CreateLeave() {
       setStartDate("");
       setEndDate("");
       setReason("");
+
+      onCreated(); // refresh dashboard
     } catch (err: any) {
       setError(err.response?.data?.error ?? "Error creating request");
     }
@@ -32,6 +38,7 @@ export default function CreateLeave() {
       {success && <p className="text-green-600 mb-2">{success}</p>}
 
       <form onSubmit={handleSubmit} className="space-y-3">
+        Initial date:
         <input
           type="date"
           className="w-full border rounded px-3 py-2"
@@ -40,6 +47,7 @@ export default function CreateLeave() {
           required
         />
 
+        Final date:
         <input
           type="date"
           className="w-full border rounded px-3 py-2"
@@ -48,6 +56,7 @@ export default function CreateLeave() {
           required
         />
 
+        Reason:
         <input
           placeholder="Reason"
           className="w-full border rounded px-3 py-2"

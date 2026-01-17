@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useImperativeHandle, useState, forwardRef } from "react";
 import { getLeaveRequests, updateLeaveStatus } from "../api/leaverequests";
 import { LeaveRequest } from "../types/leave";
 import { AuthProvider, useAuth } from "../context/AuthContext";
 
-export default function Dashboard() {
+const Dashboard = forwardRef((_, ref) => {
   const [requests, setRequests] = useState<LeaveRequest[]>([]);
   const [error, setError] = useState("");
   const { user } = useAuth();
@@ -28,6 +28,10 @@ export default function Dashboard() {
       setError("Error loading leave requests");
     }
   }
+
+  useImperativeHandle(ref, () => ({
+    reload: loadData,
+  }));
 
   useEffect(() => {
     loadData();
@@ -89,4 +93,6 @@ export default function Dashboard() {
       </div>
     </div>
   );
-}
+});
+
+export default Dashboard;

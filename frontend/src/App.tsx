@@ -1,17 +1,22 @@
-import React from "react";
+import React, {useRef} from "react";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import Login from "./pages/Login";
 import CreateLeave from "./pages/CreateLeave";
 import Dashboard from "./pages/Dashboard";
+import Layout from "./components/Layout";
 
 function AppContent() {
   const { user } = useAuth();
+  const dashboardRef = useRef<{ reload: () => void }>(null);
+
   if (!user) return <Login />;
 
   return (
     <>
-      {user.role === "Employee" && <CreateLeave />}
-      <Dashboard />
+    <Layout>
+      {user.role === "Employee" && <CreateLeave onCreated={() => dashboardRef.current?.reload()} />}
+      <Dashboard ref={dashboardRef} />
+    </Layout>
     </>
   );
 }
@@ -23,14 +28,3 @@ export default function App() {
     </AuthProvider>
   );
 }
-
-/*
-export default function App() {
-  return (
-    <div className="min-h-screen bg-gray-100">
-      <CreateLeave />
-      <Dashboard />
-    </div>
-  );
-}
-*/
