@@ -3,44 +3,36 @@
   "WorkspaceRootPath": "C:\\github\\TestTekton\\backend\\LeaveManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\notes_backend.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:notes_backend.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\models\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:models\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\dtos\\updateleavestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:dtos\\updateleavestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\controllers\\leaverequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:controllers\\leaverequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\dtos\\createleaverequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:dtos\\createleaverequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\services\\leaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:services\\leaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\services\\leaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:services\\leaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|c:\\github\\testtekton\\backend\\leavemanagement\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66954254-A7F6-431C-9ABF-33BE1968269F}|LeaveManagement.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 251,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,125 +50,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T03:40:18.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\DTOs\\LoginDto.cs",
               "RelativeDocumentMoniker": "DTOs\\LoginDto.cs",
               "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\DTOs\\LoginDto.cs",
               "RelativeToolTip": "DTOs\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-17T03:32:19.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Notes_backend.txt",
-              "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Notes_backend.txt",
-              "RelativeDocumentMoniker": "Notes_backend.txt",
-              "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Notes_backend.txt",
-              "RelativeToolTip": "Notes_backend.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-01-16T02:23:35.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "LeaveRequestsController.cs",
               "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Controllers\\LeaveRequestsController.cs",
               "RelativeDocumentMoniker": "Controllers\\LeaveRequestsController.cs",
               "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Controllers\\LeaveRequestsController.cs",
               "RelativeToolTip": "Controllers\\LeaveRequestsController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAYwEgAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwFcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:32:45.748Z"
+              "WhenOpened": "2026-01-13T02:32:45.748Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateLeaveStatusDto.cs",
-              "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\DTOs\\UpdateLeaveStatusDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\UpdateLeaveStatusDto.cs",
-              "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\DTOs\\UpdateLeaveStatusDto.cs",
-              "RelativeToolTip": "DTOs\\UpdateLeaveStatusDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:29:56.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateLeaveRequestDto.cs",
-              "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\DTOs\\CreateLeaveRequestDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\CreateLeaveRequestDto.cs",
-              "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\DTOs\\CreateLeaveRequestDto.cs",
-              "RelativeToolTip": "DTOs\\CreateLeaveRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:22:21.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
               "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wAkAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T01:12:47.083Z"
+              "WhenOpened": "2026-01-13T01:12:47.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "LeaveRequest.cs",
               "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Models\\LeaveRequest.cs",
               "RelativeDocumentMoniker": "Models\\LeaveRequest.cs",
               "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Models\\LeaveRequest.cs",
               "RelativeToolTip": "Models\\LeaveRequest.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA+wBAAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T01:08:30.169Z"
+              "WhenOpened": "2026-01-13T01:08:30.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T01:02:43.427Z"
+              "WhenOpened": "2026-01-13T01:02:43.427Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LeaveRequestService.cs",
-              "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Services\\LeaveRequestService.cs",
-              "RelativeDocumentMoniker": "Services\\LeaveRequestService.cs",
-              "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Services\\LeaveRequestService.cs",
-              "RelativeToolTip": "Services\\LeaveRequestService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:31:15.236Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
               "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Models\\Employee.cs",
               "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA1wBEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T01:04:35.774Z"
+              "WhenOpened": "2026-01-13T01:04:35.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LeaveRequestService.cs",
+              "DocumentMoniker": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Services\\LeaveRequestService.cs",
+              "RelativeDocumentMoniker": "Services\\LeaveRequestService.cs",
+              "ToolTip": "C:\\github\\TestTekton\\backend\\LeaveManagement\\Services\\LeaveRequestService.cs",
+              "RelativeToolTip": "Services\\LeaveRequestService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwBAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T02:31:15.236Z",
+              "EditorCaption": ""
             }
           ]
         },

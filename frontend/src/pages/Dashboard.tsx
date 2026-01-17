@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { getLeaveRequests, updateLeaveStatus } from "../api/leaverequests";
 import { LeaveRequest } from "../types/leave";
+import { AuthProvider, useAuth } from "../context/AuthContext";
 
 export default function Dashboard() {
   const [requests, setRequests] = useState<LeaveRequest[]>([]);
   const [error, setError] = useState("");
+  const { user } = useAuth();
+  /* console.log("Emp DSH: "+ user?.name); */
+
   const statusClasses: Record<number, string> = {
     0: "bg-yellow-100 text-yellow-700",
     1: "bg-green-100 text-green-700",
@@ -42,7 +46,12 @@ export default function Dashboard() {
             key={r.id}
             className="border rounded-lg p-4 shadow-sm bg-white"
           >
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between">
+              <div>
+                <p className="font-semibold">
+                  {r.employeeName}
+                </p>
+              </div>
               <div>
                 <p className="font-semibold">
                   {r.startDate.slice(0, 10)} → {r.endDate.slice(0, 10)}
@@ -58,8 +67,7 @@ export default function Dashboard() {
                 {statusText[r.status]}
               </span>
             </div>
-
-            {r.status.toString() === "0" && (
+            {user?.role === "Manager" && r.status === 0 && (
               <div className="mt-4 flex gap-2">
                 <button
                   onClick={() => updateLeaveStatus(r.id, 1).then(loadData)}
@@ -67,6 +75,7 @@ export default function Dashboard() {
                 >
                   Approve
                 </button>
+
                 <button
                   onClick={() => updateLeaveStatus(r.id, 2).then(loadData)}
                   className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"

@@ -1,4 +1,5 @@
 using LeaveManagement.Data;
+using LeaveManagement.Infrastructure;
 using LeaveManagement.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,17 +22,12 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader()
             .AllowAnyMethod());
 });
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<UserContext>();
 
 
 var app = builder.Build();
 app.UseCors("FrontendPolicy");
-/*
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.Migrate();
-}
-*/
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

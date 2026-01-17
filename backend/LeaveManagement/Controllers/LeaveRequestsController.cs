@@ -40,7 +40,16 @@ namespace LeaveManagement.Controllers
 
             var query = _context.LeaveRequests
                 .Include(l => l.Employee)
-                .AsQueryable();
+                .Select(l => new LeaveRequestDash
+                {
+                    Id = l.Id,
+                    EmployeeId = l.EmployeeId,
+                    EmployeeName = l.Employee.Name!,
+                    StartDate = l.StartDate,
+                    EndDate = l.EndDate,
+                    Status = l.Status,
+                    Reason = l.Reason
+                });
 
             if (user.Role == Role.Employee)
                 query = query.Where(l => l.EmployeeId == user.Id);
