@@ -1,0 +1,5 @@
+** AGREGAR MIGRACIONES LOCAL **
+Add-Migration InitialCreate
+
+** ACTUALIZAR BASE DE DATOS **
+Update-Database

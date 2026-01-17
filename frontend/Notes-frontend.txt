@@ -1,0 +1,24 @@
+** HABILITAR CMD PARA EJECUCION DE COMANDOS DE REACT **
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+** INSTALAR COMPONENTES NPM SIN PERMISO EN TERMINAL **
+npm.cmd init
+
+** EJECUTAR REACT MAIN **
+npm run start
+
+** Instalar Tailwind en Vite + React + TS **
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+** MOD. PARA EMPAREJAR Y EJECUTAR PLANTILLAS TSX EN REACT **
+npm install react@latest react-dom@latest
+npm install --save-dev @types/react@latest @types/react-dom@latest
+
+** LIB. PARA DECLARACIONES DE ARCHIVOS A EJECUTAR **
+npm install react-scripts --save
+
+
+** Instala el plugin de React para Vite **
+npm install -D @tailwindcss/vite
+npm install -D @vitejs/plugin-react
