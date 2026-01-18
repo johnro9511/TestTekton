@@ -2,6 +2,7 @@ using LeaveManagement.Data;
 using LeaveManagement.Infrastructure;
 using LeaveManagement.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,32 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<LeaveRequestService>();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("X-User-Id", new OpenApiSecurityScheme
+    {
+        Name = "X-User-Id",
+        Type = SecuritySchemeType.ApiKey,
+        In = ParameterLocation.Header,
+        Description = "User Id (1 = Employee, 2 = Manager)"
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "X-User-Id"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
 
 // Add headers
 builder.Services.AddCors(options =>

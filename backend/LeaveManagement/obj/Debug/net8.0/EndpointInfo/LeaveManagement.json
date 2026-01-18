@@ -189,6 +189,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "X-User-Id": {
+        "type": "apiKey",
+        "description": "User Id (1 = Employee, 2 = Manager)",
+        "name": "X-User-Id",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "X-User-Id": [ ]
+    }
+  ]
 }

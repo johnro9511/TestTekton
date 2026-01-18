@@ -9,6 +9,7 @@ function AppContent() {
   const { user } = useAuth();
   const dashboardRef = useRef<{ reload: () => void }>(null);
 
+  /* VALIDATE IF EXIST USER */
   if (!user) return <Login />;
 
   return (

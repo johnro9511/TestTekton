@@ -1,5 +1,5 @@
 import React, { useEffect, useImperativeHandle, useState, forwardRef } from "react";
-import { getLeaveRequests, updateLeaveStatus } from "../api/leaverequests";
+import { getLeaveRequests, updateLeaveStatus, deleteLeaveRequest } from "../api/leaverequests";
 import { LeaveRequest } from "../types/leave";
 import { AuthProvider, useAuth } from "../context/AuthContext";
 
@@ -71,23 +71,41 @@ const Dashboard = forwardRef((_, ref) => {
                 {statusText[r.status]}
               </span>
             </div>
-            {user?.role === "Manager" && r.status === 0 && (
-              <div className="mt-4 flex gap-2">
-                <button
-                  onClick={() => updateLeaveStatus(r.id, 1).then(loadData)}
-                  className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-                >
-                  Approve
-                </button>
+            {/* VALIDATE STATUS PENDING */}
+            {r.status === 0 && (
+            <div className="mt-4 flex gap-2">
+              
+              {/* MANAGER */}
+              {user?.role === "Manager" && (
+                <>
+                  <button
+                    onClick={() => updateLeaveStatus(r.id, 1).then(loadData)}
+                    className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+                  >
+                    Approve
+                  </button>
 
+                  <button
+                    onClick={() => updateLeaveStatus(r.id, 2).then(loadData)}
+                    className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                  >
+                    Reject
+                  </button>
+                </>
+              )}
+
+              {/* EMPLOYEE */}
+              {user?.role === "Employee" && (
                 <button
-                  onClick={() => updateLeaveStatus(r.id, 2).then(loadData)}
-                  className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                  onClick={() => deleteLeaveRequest(r.id).then(loadData)}
+                  className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
                 >
-                  Reject
+                  Delete
                 </button>
-              </div>
-            )}
+              )}
+
+            </div>
+          )}
           </div>
         ))}
       </div>
