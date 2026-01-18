@@ -19,6 +19,7 @@
         Rejected
     }// Status
 
+    /* QUERY FOR DASHBOARD */
     public class LeaveRequestDash
     {
         public int Id { get; set; }

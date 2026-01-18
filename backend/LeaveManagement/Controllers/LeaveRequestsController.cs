@@ -12,7 +12,10 @@ namespace LeaveManagement.Controllers
     [Route("api/[controller]")]
     public class LeaveRequestsController : ControllerBase
     {
+        /* CONNECTION TO DATABASE */
         private readonly AppDbContext _context;
+        
+        /* CONNECTION TO SERVICE */
         private readonly LeaveRequestService _service;
 
         public LeaveRequestsController(AppDbContext context, LeaveRequestService service)
@@ -23,11 +26,12 @@ namespace LeaveManagement.Controllers
 
         private async Task<Employee> GetCurrentUser()
         {
+            /* VALIDATE HEADERS FROM USERS */
             if (!Request.Headers.TryGetValue("X-User-Id", out var idValue))
                 throw new UnauthorizedAccessException("X-User-Id header missing.");
 
             var id = int.Parse(idValue!);
-            Debug.WriteLine("iduser: " + id);
+            // Debug.WriteLine("iduser: " + id);
 
             return await _context.Employees.FindAsync(id)
                    ?? throw new UnauthorizedAccessException("User not found.");
@@ -36,6 +40,7 @@ namespace LeaveManagement.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
+            /* GET ID CURRENT USER */
             var user = await GetCurrentUser();
 
             var query = _context.LeaveRequests
@@ -60,8 +65,8 @@ namespace LeaveManagement.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateLeaveRequestDto dto)
         {
-            try
-            {
+            try {
+                /* GET ID CURRENT USER */
                 var user = await GetCurrentUser();
 
                 var result = await _service.CreateAsync(
@@ -71,9 +76,7 @@ namespace LeaveManagement.Controllers
                     dto.Reason);
 
                 return Ok(result);
-            }
-            catch (InvalidOperationException ex)
-            {
+            }catch (InvalidOperationException ex){
                 return BadRequest(new { error = ex.Message });
             }
         }
@@ -81,7 +84,10 @@ namespace LeaveManagement.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateStatus(int id, UpdateLeaveStatusDto dto)
         {
+            /* GET ID CURRENT USER */
             var user = await GetCurrentUser();
+
+            /* VALIDATE ONLY MANAGER CAN UPDATE STATUS */
             if (user.Role != Role.Manager)
                 return Forbid();
 

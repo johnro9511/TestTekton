@@ -22,6 +22,7 @@ public class AuthController : ControllerBase
         var user = await _context.Employees
             .FirstOrDefaultAsync(u => u.Email == dto.Email);
 
+        /* validate users */
         if (user == null)
             return Unauthorized(new { error = "Invalid credentials" });
 

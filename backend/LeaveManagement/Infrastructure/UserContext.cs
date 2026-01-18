@@ -18,6 +18,7 @@ public class UserContext
     {
         var request = _http.HttpContext!.Request;
 
+        /* validate headers from users */
         if (!request.Headers.TryGetValue("X-User-Id", out var id))
             throw new UnauthorizedAccessException();
 

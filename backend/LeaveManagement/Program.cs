@@ -14,6 +14,7 @@ builder.Services.AddScoped<LeaveRequestService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Add headers
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("FrontendPolicy",
@@ -24,7 +25,6 @@ builder.Services.AddCors(options =>
 });
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<UserContext>();
-
 
 var app = builder.Build();
 app.UseCors("FrontendPolicy");

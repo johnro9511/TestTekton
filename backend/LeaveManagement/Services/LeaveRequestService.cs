@@ -13,12 +13,9 @@ namespace LeaveManagement.Services
             _context = context;
         }
 
-        public async Task<LeaveRequest> CreateAsync(
-            int employeeId,
-            DateTime start,
-            DateTime end,
-            string reason)
+        public async Task<LeaveRequest> CreateAsync(int employeeId,DateTime start,DateTime end,string reason)
         {
+            /* validate dates */
             if (start > end)
                 throw new InvalidOperationException("Start date must be before end date.");
 
@@ -28,11 +25,13 @@ namespace LeaveManagement.Services
                 start <= l.EndDate &&
                 end >= l.StartDate);
 
+            /* validate leaves */
             if (overlappingApproved)
                 throw new InvalidOperationException("Overlapping approved leave exists.");
 
             var days = (end - start).TotalDays + 1;
 
+            /* Requests that exceed 15 consecutive days */
             var request = new LeaveRequest
             {
                 EmployeeId = employeeId,

@@ -12,6 +12,7 @@ namespace LeaveManagement.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            /* INSERT DATA IN TABLE EMPLOYEE */
             modelBuilder.Entity<Employee>().HasData(
                 new Employee
                 {
@@ -39,6 +40,5 @@ namespace LeaveManagement.Data
                 }
             );
         }// ModelCreating
-
     }// AppDbContext
 }
